@@ -7,7 +7,7 @@ import sys
 import pytsk3
 import datetime
 
-imagefile = "\\\\.\\PhysicalDrive0"
+imagefile =  "Input\ntfs-img-kw-1.dd" # "\\\\.\\PhysicalDrive0"
 imagehandle = pytsk3.Img_Info(imagefile)
 partitionTable = pytsk3.Volume_Info(imagehandle)
 for partition in partitionTable:
